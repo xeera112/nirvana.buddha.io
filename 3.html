@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BUDDHA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">BUDDHA</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>ABOUT</b></h4>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">STORY</h1>
+      <p>Although born a prince, he realized that conditioned experiences could not provide lasting happiness or protection from suffering. After a long spiritual search he went into deep meditation, where he realized the nature of mind. He achieved the state of unconditional and lasting happiness: the state of enlightenment, of buddhahood. This state of mind is free from disturbing emotions and expresses itself through fearlessness, joy and active compassion. For the rest of his life, the Buddha taught anyone who asked how they could reach the same state.India at the time of the Buddha was very spiritually open. Every major philosophical view was present in society, and people expected spirituality to influence their daily lives in positive ways.At this time of great potential, Siddhartha Gautama, the future Buddha, was born into a royal family in what is now Nepal, close to the border with India. Growing up, the Buddha was exceptionally intelligent and compassionate. Tall, strong, and handsome, the Buddha belonged to the Warrior caste. It was predicted that he would become either a great king or spiritual leader. Since his parents wanted a powerful ruler for their kingdom, they tried to prevent Siddharta from seeing the unsatisfactory nature of the world. They surrounded him with every kind of pleasure. He was given five hundred attractive ladies and every opportunity for sports and excitement. He completely mastered the important combat training, even winning his wife, Yasodhara, in an archery contest.Suddenly, at age 29, he was confronted with impermanence and suffering. On a rare outing from his luxurious palace, he saw someone desperately sick. The next day, he saw a decrepit old man, and finally a dead person. He was very upset to realize that old age, sickness and death would come to everyone he loved. Siddharta had no refuge to offer them.The next morning the prince walked past a meditator who sat in deep absorption. When their eyes met and their minds linked, Siddhartha stopped, mesmerized. In a flash, he realized that the perfection he had been seeking outside must be within mind itself. Meeting that man gave the future Buddha a first and enticing taste of mind, a true and lasting refuge, which he knew he had to experience himself for the good of all.A painting showing the Bodhi tree under which Siddhartha Gautama, the spiritual teacher later known as Buddha, is said to have attained enlightenment.A painting showing the Bodhi tree under which Siddhartha Gautama is said to have attained enlightenment and become the Buddha.The Buddha decided he had to leave his royal responsibilities and his family in order to realize full enlightenment. He left the palace secretly, and set off alone into the forest. Over the next six years, he met many talented meditation teachers and mastered their techniques. Always he found that they showed him mind’s potential but not mind itself. Finally, at a place called Bodhgaya, the future Buddha decided to remain in meditation until he knew mind’s true nature and could benefit all beings. After spending six days and nights cutting through mind’s most subtle obstacles, he reached enlightenment on the full moon morning of May, a week before he turned thirty-five.At the moment of full realization, all veils of mixed feelings and stiff ideas dissolved and Buddha experienced the all-encompassing here and now. All separation in time and space disappeared. Past, present, and future, near and far, melted into one radiant state of intuitive bliss. He became timeless, all-pervading awareness. Through every cell in his body he knew and was everything. He became Buddha, the Awakened One.After his enlightenment, Buddha traveled on foot throughout northern India. He taught constantly for forty-five years. People of all castes and professions, from kings to courtesans, were drawn to him. He answered their questions, always pointing towards that which is ultimately real.Throughout his life, Buddha encouraged his students to question his teachings and confirm them through their own experience. This non-dogmatic attitude still characterizes Buddhism today.</p>
+    </div>
+   
+    </div>
+  </div>
+
+  
+    
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+     
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
